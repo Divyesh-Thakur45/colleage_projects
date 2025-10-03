@@ -42,7 +42,6 @@ const CreateProductController = async (req, res) => {
 const getAllProductsController = async (req, res) => {
   try {
     const { _page, _limit, frame, brand, gender, _sort, _order, q } = req.query;
-
     const { products, total } = await GetAllProductsService({
       _page,
       _limit,

@@ -29,6 +29,10 @@ const addtocartController = async (req, res) => {
       frame,
       userid: userId,
     });
+    console.log(
+      "🚀 ~ addtocart.controller.js:41 ~ addtocartController ~ addtocartController:",
+      addtocartController
+    );
 
     await newItem.save();
     res.status(201).send("Item added to cart");

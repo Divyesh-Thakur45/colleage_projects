@@ -12,6 +12,10 @@ import { useEffect, useState } from "react";
 import Home from "../Pages/Home";
 import { Eyeglasses } from "../Pages/Eyeglasses";
 import { ScreenGlasses } from "../Pages/screen-glasses";
+import { KidsGlasses } from "../Pages/kids-glasses";
+import { ContactGlasses } from "../Pages/contact-glasses";
+import { SunGlasses } from "../Pages/sun-glasses";
+import { Description } from "../ui/Description";
 
 const AllRouts = () => {
   const [role, setRole] = useState(null);
@@ -42,13 +46,11 @@ const AllRouts = () => {
         {role === "admin" && (
           <Route exact path="/admin" element={<AdminPanel />} />
         )}
-        <Route exact path="/kidsglasses" element={<NotFound />} />
-        <Route exact path="/contactlenses" element={<NotFound />} />
-        <Route exact path="/sunglasses" element={<NotFound />} />
-        <Route exact path="/homeeyetest" element={<NotFound />} />
-        {/* <Route exact path="/description/:id" element={<Description />} /> */}
+        <Route exact path="/kidsglasses" element={<KidsGlasses />} />
+        <Route exact path="/contactlenses" element={<ContactGlasses />} />
+        <Route exact path="/sunglasses" element={<SunGlasses />} />
+        <Route exact path="/description/:id" element={<Description />} />
         <Route exact path="/AddToCard" element={<AddToCard />} />
-        <Route exact path="/storelocator" element={<NotFound />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>

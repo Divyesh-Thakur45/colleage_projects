@@ -13,7 +13,7 @@ export const LeftSideBar = () => {
             : "translate-x-0 sm:-translate-x-[400px]"
         } */}
       <div
-        className={`bg-white w-80 block absolute sm:relative z-[999] transform duration-500 max-sm:w-[90%]`}
+        className={`bg-white w-80 block absolute sm:relative z-[99] transform duration-500 max-sm:w-[90%]`}
       >
         <div className="w-full p-5 border border-[#ccc] sm:p-5 max-[576px]:p-2.5">
           <div className="mb-5">
